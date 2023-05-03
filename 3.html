@@ -7,14 +7,20 @@
 </head>
 
 <body>
-  <div id="gridTitle">
-    <div>
   <h1><a href="index.html">WEB</a></h1>
-    </div>
-    <div id="button">
-  <input type="button" value="night" class="nightmode" style="background-color: rgba(0, 0, 0, 0.822); color: white;">
-  <input type="button" value="day" class="nightmode">
-    </div>
+  <div id="button">
+    <input type="button" value="night" class="nightmode" style="background-color: rgba(0, 0, 0, 0.822); color: white;"
+    onclick="
+    document.querySelector('body').style.color = 'azure';
+    document.querySelector('a').style.color = 'azure';
+    document.querySelector('body').style.backgroundColor = 'rgb(22, 22, 22)';
+    ">
+    <input type="button" value="day" class="nightmode" 
+    onclick="
+    document.querySelector('body').style.color = 'black';
+    document.querySelector('a').style.color = 'black';
+    document.querySelector('body').style.backgroundColor = 'white';
+    ">
   </div>
 
   <div id="grid">
@@ -23,7 +29,7 @@
         <h4>What are we learning?</h4>
         <li><a href="1.html"><img src="img\HTML.svg" width="22">HTML</a></li>
         <li><a href="2.html"><img src="img\CSS.svg" width="17">CSS</a></li>
-        <li><a href="3.html" style="color:red;text-decoration: underline"><img src="img\JS.svg" width="19">JavaScript</a></li>
+        <li><a href="3.html" id="active"><img src="img\JS.svg" width="19">JavaScript</a></li>
       </ol>
       <ul>
         <h4>go to learn</h4>

@@ -45,6 +45,7 @@ h4 {
 
 #active {
   color: red;
+  text-decoration: underline;
 }
 
 #grid {
@@ -52,14 +53,12 @@ h4 {
   grid-template-columns: 185px 1fr;
 }
 
-#gridTitle {
-  display: grid;
-  grid-template-columns: 1fr 150px;
-}
-
 #button{
   text-align: end;
   border-bottom: 1px solid gray;
+  position: absolute;
+  right: 0px;
+  top: 75px;
 }
 
 .nightmode{
